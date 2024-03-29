@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+    .puntuation-starts{
+        @apply w-full flex flex-col md:flex-row gap-3 bg-Light-Grayish-Magenta py-4 rounded-lg;
+    }
+
+    .card-comment{
+        @apply bg-Very-Dark-Magenta text-white py-9 px-8 rounded-xl space-y-6;
+    }
+}
