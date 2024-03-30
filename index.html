@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./src/css/styles.css">
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <!-- <style>
+    <style>
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -28,40 +28,40 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
-    </style> -->
+    </style>
 
   </head>
   <body class="relative min-h-screen">
-    <div class="bg-pattern-top-mobile bg-no-repeat h-80 w-full bg-right-top absolute inset-x-0 left-0"></div>
-    <img src="./src/images/bg-pattern-bottom-mobile.svg" alt="pattern-bottom" class="absolute bottom-0 right-0">
+    <div class="bg-pattern-top-mobile md:bg-pattern-top-desktop bg-no-repeat h-80 w-full sm:w-2/5 bg-right-top absolute inset-x-0 left-0"></div>
+    <div class="bg-pattern-bottom-mobile md:bg-pattern-bottom-desktop bg-no-repeat h-[470px] md:h-[550px] w-full sm:w-3/5 bg-right-top absolute bottom-0 right-0"></div>
 
-    <section class="py-16 w-[90%] max-w-screen-xl mx-auto font-League-Spartan">
-      <div class="flex flex-col md:flex-row gap-8 justify-between items-center">
+    <section class="py-16 w-[90%] max-w-screen-lg mx-auto font-League-Spartan">
+      <div class="w-full flex flex-col md:flex-row gap-8 justify-between items-center">
         <!-- presentation container -->
-        <div class="text-center space-y-5 max-w-sm md:text-left">
-          <h1 class="w-[90%] mx-auto text-[40px] text-Very-Dark-Magenta font-extrabold leading-8 md:m-0">10,000+ of our users love our products.</h1>
+        <div class="w-full text-center space-y-5 max-w-sm md:text-left">
+          <h1 class="w-[90%] mx-auto text-[40px] md:text-5xl text-Very-Dark-Magenta font-extrabold leading-8 md:m-0">10,000+ of our users love our products.</h1>
           <p class="text-lg text-Dark-Grayish-Magenta font-medium leading-6">
             We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.
           </p>
         </div>
         <!-- puntuations container -->
-        <div class="text-center flex flex-col gap-4">
+        <div class="text-center md:text-left w-full flex flex-col justify-center items-center md:items-end gap-4">
           <!-- individual container -->
-          <div class="puntuation-starts">
+          <div class="puntuation-starts lg:mr-20">
             <!-- starts container -->
-            <div class="w-max mx-auto flex gap-2">
-              <img src="./src/images/icon-star.svg" alt="">
-              <img src="./src/images/icon-star.svg" alt="">
-              <img src="./src/images/icon-star.svg" alt="">
-              <img src="./src/images/icon-star.svg" alt="">
-              <img src="./src/images/icon-star.svg" alt="">
+            <div class="w-max mx-auto md:mx-0 flex gap-2 items-center justify-center">
+              <img src="./src/images/icon-star.svg" alt="start-puntuation" class="aspect-square w-4 h-4">
+              <img src="./src/images/icon-star.svg" alt="start-puntuation" class="aspect-square w-4 h-4">
+              <img src="./src/images/icon-star.svg" alt="start-puntuation" class="aspect-square w-4 h-4">
+              <img src="./src/images/icon-star.svg" alt="start-puntuation" class="aspect-square w-4 h-4">
+              <img src="./src/images/icon-star.svg" alt="start-puntuation" class="aspect-square w-4 h-4">
             </div>
             <p class="text-lg text-Very-Dark-Magenta font-bold">Rated 5 Stars in Reviews</p>
           </div>
 
-          <div class="puntuation-starts">
+          <div class="puntuation-starts lg:mr-9">
             <!-- starts container -->
-            <div class="w-max mx-auto flex gap-2">
+            <div class="w-max mx-auto md:mx-0 flex gap-2 items-center justify-center">
               <img src="./src/images/icon-star.svg" alt="">
               <img src="./src/images/icon-star.svg" alt="">
               <img src="./src/images/icon-star.svg" alt="">
@@ -73,7 +73,7 @@
 
           <div class="puntuation-starts">
             <!-- starts container -->
-            <div class="w-max mx-auto flex gap-2">
+            <div class="w-max mx-auto md:mx-0 flex gap-2 items-center justify-center">
               <img src="./src/images/icon-star.svg" alt="">
               <img src="./src/images/icon-star.svg" alt="">
               <img src="./src/images/icon-star.svg" alt="">
@@ -91,7 +91,7 @@
         <!-- card-feedback -->
         <article class="card-comment">
           <!-- user-data -->
-          <div class="flex gap-6 items-center justify-center">
+          <div class="flex gap-6 items-center justify-start">
             <img src="./src/images/image-colton.jpg" alt="user-colton" class="rounded-full max-w-12">
             <div class="">
               <h5 class="font-bold">Colton Smith</h5>
@@ -100,16 +100,16 @@
           </div>
 
           <!-- user comment -->
-          <p class="font-medium text-Light-Grayish-Magenta">
+          <p class="font-medium text-Light-Grayish-Magenta md:text-sm">
             "We needed the same printed design as the one we had ordered a week prior.
             Not only did they find the original order, but we also received it in time.
             Excellent!"
           </p>
         </article>
 
-        <article class="card-comment">
+        <article class="card-comment md:mt-6">
           <!-- user-data -->
-          <div class="flex gap-6 items-center justify-center">
+          <div class="flex gap-6 items-center justify-start">
             <img src="./src/images/image-irene.jpg" alt="user-colton" class="rounded-full max-w-12">
             <div class="">
               <h5 class="font-bold">Irene Roberts</h5>
@@ -118,15 +118,15 @@
           </div>
 
           <!-- user comment -->
-          <p class="font-medium text-Light-Grayish-Magenta">
+          <p class="font-medium text-Light-Grayish-Magenta md:text-sm">
             "Customer service is always excellent and very quick turn around. Completely
     delighted with the simplicity of the purchase and the speed of delivery."
           </p>
         </article>
 
-        <article class="card-comment">
+        <article class="card-comment md:mt-12">
           <!-- user-data -->
-          <div class="flex gap-6 items-center justify-center">
+          <div class="flex gap-6 items-center justify-start">
             <img src="./src/images/image-anne.jpg" alt="user-colton" class="rounded-full max-w-12">
             <div class="">
               <h5 class="font-bold">Anne Wallace</h5>
@@ -135,7 +135,7 @@
           </div>
 
           <!-- user comment -->
-          <p class="font-medium text-Light-Grayish-Magenta">
+          <p class="font-medium text-Light-Grayish-Magenta md:text-sm">
             "Put an order with this company and can only praise them for the very high
     standard. Will definitely use them again and recommend them to everyone!"
           </p>
@@ -146,14 +146,12 @@
     
 
 
-<!--
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://github.com/lancer751">LauWongCoder</a>.
     </div>
 
-     -->
   </body>
 </html>

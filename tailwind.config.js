@@ -13,7 +13,10 @@ module.exports = {
       "League-Spartan": ['League Spartan', 'sans-serif'],
     },
     backgroundImage:{
-      "pattern-top-mobile": "url('../images/bg-pattern-top-mobile.svg')"
+      "pattern-top-mobile": "url('../images/bg-pattern-top-mobile.svg')",
+      "pattern-top-desktop": "url('../images/bg-pattern-top-desktop.svg')",
+      "pattern-bottom-mobile": "url('../images/bg-pattern-bottom-mobile.svg')",
+      "pattern-bottom-desktop": "url('../images/bg-pattern-bottom-desktop.svg')",
     },
     extend: {
       
